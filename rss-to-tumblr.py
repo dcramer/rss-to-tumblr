@@ -18,6 +18,8 @@ ENDPOINT = 'http://www.tumblr.com/api/write'
 EMAIL = 'YOUR EMAIL'
 PASSWORD = 'YOUR PASSWORD'
 
+TAGS = ''
+
 FEEDS = (
     ('USERNAME', 'FEED URL'),
 )
@@ -59,7 +61,7 @@ class FeedAggregator(object):
             'state': 'published',
             'group': GROUP,
             'generator': 'SexyTumblrRSS 1.0',
-            'tags': 'dev',
+            'tags': TAGS,
             'name': title,
             'url': url,
             'slug': slug,
